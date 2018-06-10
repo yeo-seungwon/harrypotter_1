@@ -1,0 +1,32 @@
+#container { height: 100% }
+body { background-image: url(img2.jpg); background-repeat: no-repeat;
+       background-color: black; background-size: 100%;
+       background-position:center top;
+       width: 1300px; height: 800px; }
+footer{ position: absolute; width: 100%; color: white; }
+#h_menu { list-style-type: none; display: inline;}
+.s { list-style: none; }
+.menus{ color: lightgray; font-size: 20pt; display: inline; margin-right: 15px; }
+h1 #h_menu a { text-decoration: none; color: lightgray;}
+#h_menu a:hover { color: white; text-decoration: underline;}
+.ser { color: white; font-size: 20pt;}
+#slide { height: 800px; position: relative; overflow: hidden; clear: both; }
+#slide .s { width: 200%; height: 100%; transition: 1s; }
+#slide .s:after{ content: ""; display: block; clear: both; }
+#slide .ser { float: left; width: 25%; height: 50%; }
+#slide .ser:nth-child(1){
+}
+#slide .ser:nth-child(2){
+}
+
+#slide input { display: none; }
+#slide label { display: inline-block; vertical-align: middle;
+               width: 10px; height: 10px; border: 2px solid #666;
+               background: #fff; transition: 0.3s; border-radius: 50%;
+               cursor: pointer;}
+#slide .pos { text-align: center; position: absolute;
+              bottom: 10px; left: 0; width: 100%; text-align: center;}
+#pos1:checked~.s { margin-left: 0%; }
+#pos2:checked~.s { margin-left: -100%; }
+#pos1:checked~.pos > label:nth-child(1) { background: #666; }
+#pos2:checked~.pos > label:nth-child(2) { background: #666; }
